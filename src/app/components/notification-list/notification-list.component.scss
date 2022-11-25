@@ -1,3 +1,15 @@
 .row {
   width: 100%;
 }
+
+.card-header::before {
+  content: url("../../../assets/images/circle.svg")
+}
+
+.card.read {
+  opacity: 0.5;
+}
+
+.read .card-header::before {
+  content: url('../../../assets/images/check-circle.svg');
+}

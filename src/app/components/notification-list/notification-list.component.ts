@@ -10,8 +10,6 @@ export class NotificationListComponent {
   notifications = NOTIFICATIONS;
 
   readNotification(item: any): void {
-    console.log(item);
-    item.read = true;
-    console.log(item);
+    item.read = !item.read;
   }
 }

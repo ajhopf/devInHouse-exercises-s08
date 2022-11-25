@@ -1,7 +1,14 @@
 <section class="row">
   <ul class="container d-flex flex-wrap px-4 justify-content-center">
-    <li *ngFor="let item of notifications" class="card text-center col-3 m-1">
-      <div class="card-header">{{ item.title }}</div>
+    <li
+      *ngFor="let item of notifications"
+      class="card text-center col-3 m-1"
+      [ngClass]="item.read ? 'read' : ''"
+    >
+      <div class="card-header">
+        {{ item.title }}
+      </div>
+
       <div class="card-body">
         <h5 class="card-title">{{ item.text }}</h5>
       </div>

@@ -5,7 +5,14 @@
       <div class="card-body">
         <h5 class="card-title">{{ item.text }}</h5>
       </div>
-      <div class="card-footer text-muted">{{ item.createdAt }}</div>
+      <button class="btn btn-secondary" (click)="readNotification(item)">
+        Marcar como lida
+      </button>
+
+      <div class="card-footer text-muted">
+        {{ item.createdAt.toLocaleDateString("pt-BR") }} -
+        {{ item.createdAt.toLocaleTimeString() }}
+      </div>
     </li>
   </ul>
 </section>

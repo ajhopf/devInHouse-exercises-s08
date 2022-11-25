@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NOTIFICATIONS } from 'src/app/constants/notifications';
 
 @Component({
   selector: 'ntap-notification-list',
@@ -6,19 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./notification-list.component.scss']
 })
 export class NotificationListComponent {
-  notifications = [
-    {
-      title: 'Ifood',
-      text: 'Seu pedido está sendo preparado!',
-      createdAt: new Date()
-    },{
-    title: 'Mercado Livre',
-    text: 'Seu pedido está a caminho!',
-    createdAt: new Date()
-    },{
-    title: 'Amazon',
-    text: 'Seu pedido chegou!',
-    createdAt: new Date()
-    }
-  ]
+  notifications = NOTIFICATIONS;
+
+  readNotification(item: any): void {
+    console.log(item);
+    item.read = true;
+    console.log(item);
+  }
 }

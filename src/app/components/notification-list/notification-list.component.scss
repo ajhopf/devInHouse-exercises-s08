@@ -8,7 +8,7 @@
 }
 
 .card-header::after {
-  content: url("../../../assets/images/circle.svg");
+  content: url("../../../assets/icons/circle.svg");
 }
 
 
@@ -17,5 +17,5 @@
 }
 
 .read .card-header::after {
-  content: url('../../../assets/images/check-circle.svg');
+  content: url('../../../assets/icons/check-circle.svg');
 }

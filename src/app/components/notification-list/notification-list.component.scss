@@ -1,10 +1,16 @@
 .row {
-  width: 100%;
+  width: 100vw;
+}
+
+.card-header h2 {
+  display: inline;
+  margin: 0 30%;
 }
 
 .card-header::after {
-  content: url("../../../assets/images/circle.svg")
+  content: url("../../../assets/images/circle.svg");
 }
+
 
 .card.read {
   opacity: 0.5;
@@ -12,6 +18,4 @@
 
 .read .card-header::after {
   content: url('../../../assets/images/check-circle.svg');
-  position: relative;
-  // left: 100px;
 }

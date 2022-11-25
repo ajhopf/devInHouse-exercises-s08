@@ -3,10 +3,10 @@ import { images } from 'src/app/constants/images-src';
 import { Image } from 'src/app/models/image';
 
 @Component({
-  selector: 'ntap-navbar',
-  templateUrl: './navbar.component.html',
-  styleUrls: ['./navbar.component.scss']
+  selector: 'ntap-header',
+  templateUrl: './header.component.html',
+  styleUrls: ['./header.component.scss']
 })
-export class NavbarComponent {
+export class HeaderComponent {
   headerImage: Image = images.find(image => image.location === 'header')!;
 }

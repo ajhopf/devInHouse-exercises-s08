@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NAVLINKS } from 'src/app/constants/nav-links';
+import { NAVLINKS } from 'src/app/constants/navLinks';
 import { NavLink } from 'src/app/models/navlink';
 
 @Component({

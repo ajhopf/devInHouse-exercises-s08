@@ -6,5 +6,21 @@ import { Component } from '@angular/core';
   styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent {
-
+  navLinks = [{
+    title: 'Home',
+    src: '#'
+  },
+  {
+    title: 'Pricing',
+    src: '#'
+  },
+  {
+    title: 'FAQs',
+    src: '#'
+  },
+  {
+    title: 'About',
+    src: '#'
+  }
+  ];
 }

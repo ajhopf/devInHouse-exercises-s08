@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NOTIFICATIONS } from 'src/app/constants/notifications';
+import { Notification } from 'src/app/models/notification';
 
 @Component({
   selector: 'ntap-notification-list',
@@ -7,9 +8,9 @@ import { NOTIFICATIONS } from 'src/app/constants/notifications';
   styleUrls: ['./notification-list.component.scss']
 })
 export class NotificationListComponent {
-  notifications = NOTIFICATIONS;
+  notifications: Notification[] = NOTIFICATIONS;
 
-  readNotification(item: any): void {
+  readNotification(item: Notification): void {
     item.read = !item.read;
   }
 }

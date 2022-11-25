@@ -2,7 +2,7 @@
   width: 100%;
 }
 
-.card-header::before {
+.card-header::after {
   content: url("../../../assets/images/circle.svg")
 }
 
@@ -10,6 +10,8 @@
   opacity: 0.5;
 }
 
-.read .card-header::before {
+.read .card-header::after {
   content: url('../../../assets/images/check-circle.svg');
+  position: relative;
+  // left: 100px;
 }

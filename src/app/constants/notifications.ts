@@ -1,4 +1,6 @@
-export const NOTIFICATIONS = [
+import { Notification } from "../models/notification";
+
+export const NOTIFICATIONS: Notification[] = [
   {
     title: 'Ifood',
     text: 'Seu pedido está sendo preparado!',

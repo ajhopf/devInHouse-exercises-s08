@@ -18,15 +18,7 @@ const routes: Routes = [
 				component: HomeComponent
 			},
 			{
-				path: 'lidos',
-				component: HomeComponent
-			},
-			{
-				path: 'nao-lidos',
-				component: HomeComponent
-			},
-			{
-				path: 'todos',
+				path: ':filter',
 				component: HomeComponent
 			}
 		]

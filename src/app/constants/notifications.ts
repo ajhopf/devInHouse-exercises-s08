@@ -10,7 +10,7 @@ export const NOTIFICATIONS: Notification[] = [
     title: 'Mercado Livre',
     text: 'Seu pedido está a caminho!',
     createdAt: new Date(2022, 5, 11, 8, 11),
-    read: false
+    read: true
   }, {
     title: 'Amazon',
     text: 'Seu pedido chegou!',

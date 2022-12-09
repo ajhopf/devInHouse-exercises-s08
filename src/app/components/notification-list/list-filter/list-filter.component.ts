@@ -6,7 +6,7 @@ import { Component, EventEmitter, Output } from '@angular/core';
 	styleUrls: ['./list-filter.component.scss']
 })
 export class ListFilterComponent {
-	filterText = ['Todos', 'Não Lidos', 'Lidos']
+	filterBtnText = ['Todos', 'Não Lidos', 'Lidos']
 
 	@Output() filter = new EventEmitter<string>()
 

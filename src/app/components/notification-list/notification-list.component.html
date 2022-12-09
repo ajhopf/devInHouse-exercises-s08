@@ -1,8 +1,8 @@
 <section class="row">
-  <ntap-list-filter (filter)="showFilter($event)" ></ntap-list-filter>
+  <ntap-list-filter (filter)="changeToFilteredRoute($event)" ></ntap-list-filter>
   <ul class="container d-flex flex-wrap px-4 justify-content-center">
     <li
-      *ngFor="let item of notifications"
+      *ngFor="let item of notificationsToRender"
       class="card text-center col-8 col-lg-5 m-1"
       [ngClass]="item.read ? 'read' : ''"
     >
@@ -24,4 +24,3 @@
     </li>
   </ul>
 </section>
-2

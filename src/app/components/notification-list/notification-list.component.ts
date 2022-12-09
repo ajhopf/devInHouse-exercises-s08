@@ -13,4 +13,8 @@ export class NotificationListComponent {
   readNotification(item: Notification): void {
     item.read = !item.read;
   }
+
+  showFilter(event: string) {
+    console.log(event)
+  }
 }

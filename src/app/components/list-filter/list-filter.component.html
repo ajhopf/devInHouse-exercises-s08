@@ -3,6 +3,7 @@
 	<li
 	  *ngFor="let filter of filterText"
 	  class="list-group-item"
+	  (click)="onFilterClick(filter)"
 	>
 	  {{ filter }}
 	</li>

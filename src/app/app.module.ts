@@ -6,6 +6,9 @@ import { NotificationListComponent } from './components/notification-list/notifi
 import { HeaderComponent } from './components/header/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ListFilterComponent } from './components/list-filter/list-filter.component';
+import { HomeComponent } from './pages/home/home.component';
+import { AboutComponent } from './pages/about/about.component';
+
 
 @NgModule({
   declarations: [
@@ -13,7 +16,9 @@ import { ListFilterComponent } from './components/list-filter/list-filter.compon
     NotificationListComponent,
     HeaderComponent,
     FooterComponent,
-    ListFilterComponent
+    ListFilterComponent,
+    HomeComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule

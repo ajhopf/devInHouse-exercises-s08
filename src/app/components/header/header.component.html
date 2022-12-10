@@ -1,7 +1,25 @@
-<header class="row py-3 mb-4 border-bottom">
-  <a href="/" class="col-1 text-center">
-    <img src="{{ headerImage.src }}" alt="{{ headerImage.alt }}" />
+<header class="mt-3">
+  <a routerLink="home" class="appImg navbar-brand ms-1 d-flex align-items-center">
+	<img src="{{ headerImage.src }}" alt="{{ headerImage.alt }}"/>
   </a>
 
-  <h1 class="col-10 text-center">NotificationApp</h1>
+  <h1 class="appTitle text-center">NotificationApp</h1>
+
+  <nav class="appNav navbar flex-grow-1 navbar navbar-expand-lg">
+	<div class="container justify-content-end">
+	  <ul class="navbar-nav text-center me-1 mb-2 mb-lg-0">
+		<li class="nav-item">
+		  <a class="nav-link" routerLink="home" routerLinkActive="active">
+			Home
+		  </a>
+		</li>
+		<li class="nav-item">
+		  <a class="nav-link" routerLink="about" routerLinkActive="active">
+			About
+		  </a>
+		</li>
+	  </ul>
+	</div>
+  </nav>
 </header>
+<hr>

@@ -7,10 +7,12 @@ import { Component, EventEmitter, Output } from '@angular/core';
 })
 export class ListFilterComponent {
 	filterBtnText = ['Todos', 'Não Lidos', 'Lidos']
+	activeBtn = 'Todos'
 
 	@Output() filter = new EventEmitter<string>()
 
 	onFilterClick(filterName: string){
+		this.activeBtn = filterName
 		this.filter.emit(filterName)
 	}
 }

@@ -3,6 +3,7 @@
 	<li
 	  *ngFor="let filter of filterBtnText"
 	  class="list-group-item"
+	  [ngClass]="activeBtn === filter ? 'active' : ''"
 	  (click)="onFilterClick(filter)"
 	>
 	  {{ filter }}
